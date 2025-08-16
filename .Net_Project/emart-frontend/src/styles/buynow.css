@@ -1,0 +1,20 @@
+/* src/styles/buynow.css */
+
+.buy-now-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.confirm-button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.confirm-button:hover {
+    background-color: #e64a19;
+}

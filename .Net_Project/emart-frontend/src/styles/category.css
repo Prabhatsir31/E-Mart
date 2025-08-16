@@ -1,0 +1,128 @@
+/* Reset & global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Container styles */
+.categories-container
+{
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.categories-container h1 
+{
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  /* color: #007bff; unified color */
+  color: burlywood;
+}
+
+/* Grid layout */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* Card style */
+.category-card
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Card image */
+.category-card img {
+  width: 100%;
+  max-width: 180px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+
+
+/* Card title */
+.category-card h3
+{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Loading & error messages */
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 50px;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .categories-container h1,
+   h1 {
+    font-size: 2rem;
+  }
+
+  .category-card img,
+   img {
+    height: 140px;
+  }
+
+  .category-card h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-container
+  {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .category-card img 
+  {
+    height: 120px;
+    max-width: 160px;
+  }
+
+  .category-card h3
+  {
+    font-size: 0.95rem;
+  }
+}

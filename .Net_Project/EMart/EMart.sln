@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMart", "EMart.csproj", "{8733A647-9753-4C44-A6F0-9F7E784FC72D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8733A647-9753-4C44-A6F0-9F7E784FC72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8733A647-9753-4C44-A6F0-9F7E784FC72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8733A647-9753-4C44-A6F0-9F7E784FC72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8733A647-9753-4C44-A6F0-9F7E784FC72D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DC3BC45-CB93-4007-809D-B13BCE0659AA}
+	EndGlobalSection
+EndGlobal

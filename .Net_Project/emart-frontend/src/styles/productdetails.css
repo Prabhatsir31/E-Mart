@@ -1,0 +1,154 @@
+/* Reset & Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.product-details-container {
+  margin: 30px auto;
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.prohead {
+  text-align: center;
+  color: burlywood;
+}
+
+.product-details-wrapper {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 20px auto;
+  margin-bottom: -30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+/* Left Section - Product Image */
+.product-image-section {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-detail-image {
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Buttons below image */
+.product-buttons {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  justify-content: center;
+}
+
+.product-buttons button {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-now-btn {
+  background-color: #ff5722;
+  color: white;
+}
+
+.buy-now-btn:hover {
+  background-color: #e64a19;
+}
+
+.add-to-cart-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1976d2;
+}
+
+/* Right Section - Product Info */
+.product-info-section {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-info-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-info-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.product-info-section b {
+  color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .product-details-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image-section,
+  .product-info-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-info-section {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-details-container {
+    padding: 20px 10px;
+  }
+
+  .product-buttons {
+    flex-direction: column;
+  }
+
+  .product-buttons button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-info-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-info-section p {
+    font-size: 0.95rem;
+  }
+}
