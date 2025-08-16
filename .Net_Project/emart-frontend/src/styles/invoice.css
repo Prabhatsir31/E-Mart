@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.invoice-container {
+  max-width: 950px;
+  margin: 70px auto;
+  margin-bottom: 20px;
+  padding: 30px 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  color: #333;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.invoice-header-left h2 {
+  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.invoice-header-left p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.invoice-header-right p {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+/* Table */
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.invoice-table th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.invoice-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.95rem;
+}
+
+.invoice-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Total Section */
+.invoice-total {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.invoice-total h2 {
+  font-size: 1.5rem;
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Buttons */
+.invoice-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.invoice-buttons button {
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn-home {
+  background: #6c757d;
+  color: #fff;
+}
+
+.btn-home:hover {
+  background: #5a6268;
+}
+
+.btn-download {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-download:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+.invoice-footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .invoice-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .invoice-header-right {
+    margin-top: 15px;
+  }
+  .invoice-buttons {
+    flex-direction: column;
+  }
+  .invoice-buttons button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .invoice-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+  .invoice-header-left h2 {
+    font-size: 1.4rem;
+  }
+  .invoice-table th,
+  .invoice-table td {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+  .invoice-total h2 {
+    font-size: 1.3rem;
+  }
+}

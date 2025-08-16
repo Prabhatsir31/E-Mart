@@ -1,0 +1,60 @@
+.order-history-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  margin-top: 70px;
+  padding: 0 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.order-history-container h2 {
+  color: #1a73e8; /* Flipkart-like blue */
+  margin-bottom: 1rem;
+}
+
+.order-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.order-items {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.order-item {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.order-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.item-info h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1rem;
+}
+
+.item-info p {
+  margin: 0.15rem 0;
+  font-size: 0.875rem;
+  color: #555;
+}
